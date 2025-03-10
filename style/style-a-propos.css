@@ -1,0 +1,157 @@
+/* Style de la section Body*/
+body {
+    background-color: #1F2039;
+    color: white; /* Le texte de la page sera blanc */
+}
+
+/* RÉGLAGES GÉNÉREAUX */
+
+/* Textes */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #e7b0ff;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #e7b0ff;
+    margin-left: 3%;
+}
+
+/* Réglages pour tout les paragraphes */
+p{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    margin-left: 5%;
+}
+
+/* Liens */
+/* Textes des liens */
+a {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* Effets */
+/* effet au survole d'un lien */
+a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+/* Images */
+img:hover {
+    opacity: 0.5;
+}
+
+
+/* Déclarations spéficiques */
+/* mots marquants */
+.important {
+    color: #e7b0ff;
+    font-weight: bold;
+}
+
+/* Boutons */
+.buttoncontact {
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background: linear-gradient(0deg, #8E86B5, #ACAEED);
+    border-radius: 60px;
+    box-shadow: 0px 6px 15px black;
+    padding: 20px;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+
+/* Page : a propos sections */
+.container-section1-2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-right: 1px solid #ACAEED;
+    border-bottom: 1px solid #ACAEED;
+}
+
+.a-propos-title-section1 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.p-section1 {
+    font-size: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.a-propos-section1 {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.a-propos-title-section2 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.a-propos-section2-services-liste {
+    font-size: 1.3em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 25%;
+}
+
+.btn-portfolio {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+/* tableau de tarifs */
+caption {
+    justify-content: center;
+    font-weight: 800;
+    padding-bottom: 75px;
+    font-size: 1.3em;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ACAEED;
+}
+
+td {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid #ACAEED;
+}

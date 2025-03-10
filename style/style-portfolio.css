@@ -1,0 +1,25 @@
+/* Feuille de style page portfolio */
+
+.portfolio-section1 {
+  background-color: #1F2039;
+  padding: 50px;
+}
+
+.portfolio-section-2-title {
+  color: black;
+  margin-left: 5%;
+}
+
+.portfolio-section-paysages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 99%;
+  height: 99%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.image-portfolio {
+  margin: 10px;
+}
