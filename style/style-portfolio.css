@@ -14,12 +14,81 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 99%;
-  height: 99%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 95%; /* Légèrement réduit pour éviter le scroll horizontal */
+  gap: 15px;
+  margin: 0 auto 20px auto; /* Centré avec marge en bas */
+  box-sizing: border-box;
+}
+
+.portfolio-section-paysages a {
+  flex: 0 0 31%; /* Fixe la taille à environ un tiers, en tenant compte des gaps */
+  aspect-ratio: 16/9;
+  overflow: hidden;
 }
 
 .image-portfolio {
-  margin: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-portfolio:hover {
+  transform: scale(1.05);
+}
+
+/* Assure que le contenu reste dans la fenêtre */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.gallery-section {
+  padding: 20px 0; /* Réduit le padding horizontal */
+}
+
+.gallery-section h2 {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px; /* Augmente légèrement l'espace entre les images */
+  padding: 0 40px; /* Augmente les marges latérales */
+  max-width: 1600px; /* Augmente la largeur maximale */
+  margin: 0 auto;
+  width: 95%; /* Prend 95% de la largeur disponible */
+}
+
+.gallery-grid a {
+  position: relative;
+  width: 100%;
+  padding-top: 66.67%;
+  overflow: hidden;
+  display: block;
+}
+
+.gallery-grid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
 }
